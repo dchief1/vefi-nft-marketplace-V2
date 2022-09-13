@@ -4,7 +4,8 @@ import { FaSearch } from 'react-icons/fa';
 
 export const index = () => {
   return (
-    <div className='bg-blue-800'>
+    <div className='bg-[#03015A]'>
+
       <div className='flex justify-between items-center p-6'>
 
         <img 
@@ -13,16 +14,33 @@ export const index = () => {
             alt='logo' 
         />
 
-      <div className='flex justify-between items-center gap-4'>
-        <div className='text-black bg-[#FFE600] rounded-lg '>
-          <Link href='/'>
-            <span className='grid place-items-center mx-6 my-2 text-md'>Connect wallet</span>
-          </Link>
-        </div>
+        <div 
+          className='
+          flex justify-between items-center gap-4
+        '>
 
-        <span className='text-red-200 text-2xl'>
-          <FaSearch />
-        </span>
+          <div 
+            className='
+            text-black bg-[#FFE600] rounded-lg 
+          '>
+
+            <Link href='/'>
+
+              <span 
+                className='
+                grid place-items-center mx-6 my-2 text-md
+              '>
+                Connect wallet
+              </span>
+
+            </Link>
+
+          </div>
+
+          <span className='text-red-200 text-2xl'>
+            <FaSearch />
+          </span>
+
         </div>
         
       </div>
