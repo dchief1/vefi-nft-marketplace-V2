@@ -3,17 +3,18 @@ import { FaDiscord, FaYoutube } from 'react-icons/fa';
 
 export default function index() {
   return (
+
     <div 
       className='
       bg-[#01003E] w-full text-white 
-      py-4 md:py-8 lg:py-12 h-full
-      '>
+      py-4 md:py-8 lg:py-12 
+    '>
 
         <div 
-          className="
+          className='
           flex md:flex-row flex-col lg:flex-row 
           justify-between lg:mx-12 
-         ">
+        '>
 
         {/* Firs Section */}
             <div className='px-8 md:px-8 '>
@@ -26,7 +27,7 @@ export default function index() {
                   className='
                   flex gap-4 text-[#5865F2] mb-4 items-center mt-6 
                   cursor-pointer md:text-6xl text-4xl
-                 '>
+                '>
 
                  <Link href='/'>
                    <span> <FaDiscord /> </span>
@@ -47,15 +48,20 @@ export default function index() {
 
         {/* Second Section */}
             <div 
-              className="
-              flex md:px-8  flex-row ml-8 lg:flex-row
-              ">
+              className='
+              flex md:px-8 flex-row ml-8 lg:flex-row
+            '>
 
                 <div className='md:mr-12'>
 
-                  <span className="mb-2 md:mb-6 text-lg">Marketplace</span>
+                  <span className="mb-2 md:mb-6 text-lg">
+                    Marketplace
+                  </span>
 
-                  <ul className='text-sm pt-2 text-white text-opacity-70'>
+                  <ul 
+                    className='
+                    text-sm pt-2 text-white text-opacity-70
+                  '>
 
                     <li>
                       <Link href='/'>Launchpad</Link>
@@ -75,12 +81,14 @@ export default function index() {
 
                 <div className=' mx-12'>
 
-                  <span className="mb-2 md:mb-6 text-lg">Links</span>
+                  <span className="mb-2 md:mb-6 text-lg">
+                    Links
+                  </span>
 
                   <ul 
                     className='
                     text-sm pt-2 text-white text-opacity-70
-                    '>
+                  '>
 
                     <li>
                       <Link href='/'>Become a partner</Link>
@@ -103,13 +111,13 @@ export default function index() {
          <div 
           className='
           border-t border-white border-opacity-25 mt-8
-          '>
+        '>
              
               <p 
                 className='
                 pt-8 flex items-center justify-center gap-2 
                 text-white text-opacity-70
-               '>
+              '>
                 <span className='font-bold'> VEFI NFT marketplace</span>
                     is an independent product of the 
                 <span className='font-bold'>VEFI ecosystem</span>
