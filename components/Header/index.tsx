@@ -4,7 +4,7 @@ import { FaSearch } from 'react-icons/fa';
 
 export const index = () => {
   return (
-    <div className='bg-[#03015A]'>
+    <div className=''>
 
       <div className='flex justify-between items-center p-6'>
 
@@ -37,12 +37,12 @@ export const index = () => {
 
           </div>
 
-          <span className='text-red-200 text-2xl'>
+          <span className='text-white text-2xl'>
             <FaSearch />
           </span>
 
         </div>
-        
+
       </div>
 
     </div>

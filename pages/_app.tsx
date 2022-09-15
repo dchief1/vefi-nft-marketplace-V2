@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <> 
+  return <div className='bg-[#03015A]'> 
     <Header />
 
     <div className='min-h-screen'>
@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     </div>
 
     <Footer />
- </>
+ </div>
 }
 
 export default MyApp;
