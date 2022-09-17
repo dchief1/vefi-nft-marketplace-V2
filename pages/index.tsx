@@ -1,9 +1,10 @@
 import type { NextPage } from 'next';
+import Hero from '../components/Hero';
 
 const Home: NextPage = () => {
   return (
-    <div>
-      <span>Homepage goes here! Like seriously, it does</span>
+    <div className="flex flex-col justify-center items-center">
+      <Hero />
     </div>
   );
 };
