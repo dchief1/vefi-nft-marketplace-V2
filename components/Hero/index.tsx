@@ -66,31 +66,39 @@ export default function Hero() {
 
   return (
     <div className="flex flex-col md:flex-row justify-between items-center w-full">
-      <div className="flex flex-col justify-center items-center w-full md:w-1/2">
-        <div className="flex flex-row justify-center items-center w-full">
-          <span className="text-[#fff] font-[800] text-[48px]">Buy &amp; Sell</span>
-        </div>
-        {_.map(heroTexts, (txt, index) => (
+      <div className="flex flex-col justify-center items-center w-full md:w-1/2 md:px-[66.91px] gap-6">
+        <div className="flex flex-row justify-center md:justify-start w-full gap-4">
+          <div className="flex flex-col justify-start items-center">
+          <span className="text-[#fff] font-[800] text-[30px] md:text-[48px]">Buy &amp; Sell</span>
+          {_.map(heroTexts, (txt, index) => (
           <Transition
             key={index}
             as="div"
-            className="flex flex-row justify-center items-center w-full"
+            className="flex flex-row justify-center items-center w-full gap-4"
             enter="transform transition ease-in-out duration-[500ms]"
             enterFrom="opacity-0 translate-y-4"
             enterTo="opacity-100 translate-y-0"
             show={index === textIndex}
           >
-            <span className="text-[#fff] font-[800] text-[48px]">{txt}</span>
+            <span className="text-[#fff] font-[800] text-[20px] md:text-[48px]">{txt}</span>
           </Transition>
         ))}
-        <div className="flex flex-row justify-center items-center w-full">
-          <span className="text-[#fff] font-[800] text-[48px]">Artworks On Multiple Chains</span>
+        <span className="text-[#fff] font-[800] text-[20px] md:text-[48px]">Artworks On Multiple Chains</span>
+          </div>
+        </div>
+        <div className="flex flex-row justify-center md:justify-start items-center w-full">
+          <span className="text-[#fff] font-[400] text-[16px]">A world of NFTs with community in mind</span>
+        </div>
+        <div className="flex flex-row justify-center md:justify-start items-center w-full">
+          <button className="bg-[#ffe600] rounded-[12px] px-8 py-1 flex justify-center items-center">
+            <span className="text-[#000] font-[500] text-[16px]">Become a creator</span>
+          </button>
         </div>
       </div>
-      <div className="flex flex-nowrap flex-row justify-start items-center w-full md:w-1/2 overflow-scroll py-2">
+      <div className="flex flex-nowrap flex-row justify-start items-center w-full md:w-1/2 overflow-scroll py-2 md:my-auto my-2">
         {_.map(mockData, (data, index) => (
           <div key={index} className="mx-2">
-            <div className="card px-2 py-2 shadow bg-white rounded-[26px] w-full h-full">
+            <div className="card px-2 py-2 shadow-xl bg-white rounded-[26px] w-full h-full">
               <div className="flex justify-center items-center transition-opacity ease-in-out">
                 <div className="absolute py-2 top-3 left-2 w-full flex flex-col justify-between bg-transparent opacity-0 hover:opacity-100 h-[250px]">
                   <div className="flex justify-around items-center w-full">

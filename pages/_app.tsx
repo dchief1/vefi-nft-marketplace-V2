@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <div className="bg-[#03015A] flex justify-center items-center flex-col min-h-screen w-screen">
       <Header />
 
-      <div className="flex-1 overflow-auto w-full">
+      <div className="flex-1 overflow-auto w-full mt-[62.05px]">
         <Component {...pageProps} />;
       </div>
 
