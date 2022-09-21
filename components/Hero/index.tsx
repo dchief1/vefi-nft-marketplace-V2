@@ -65,27 +65,23 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row justify-between items-center w-full">
-      <div className="flex flex-col justify-center items-center w-full md:w-1/2 md:px-[66.91px] gap-6">
-        <div className="flex flex-row justify-center md:justify-start w-full gap-4">
-          <div className="flex flex-col justify-start items-center">
-          <span className="text-[#fff] font-[800] text-[30px] md:text-[48px]">Buy &amp; Sell</span>
-          {_.map(heroTexts, (txt, index) => (
+    <div className="flex flex-col md:flex-row justify-center items-center w-full gap-4">
+      <div className="flex flex-col justify-start items-center md:items-start gap-2">
+        <span className="text-[#fff] font-[800] text-[30px] md:text-[48px]">Buy &amp; Sell</span>
+        {_.map(heroTexts, (txt, index) => (
           <Transition
             key={index}
-            as="div"
-            className="flex flex-row justify-center items-center w-full gap-4"
+            as="span"
+            className="text-[#fff] font-[800] text-[20px] md:text-[48px]"
             enter="transform transition ease-in-out duration-[500ms]"
             enterFrom="opacity-0 translate-y-4"
             enterTo="opacity-100 translate-y-0"
             show={index === textIndex}
           >
-            <span className="text-[#fff] font-[800] text-[20px] md:text-[48px]">{txt}</span>
+            {txt}
           </Transition>
         ))}
         <span className="text-[#fff] font-[800] text-[20px] md:text-[48px]">Artworks On Multiple Chains</span>
-          </div>
-        </div>
         <div className="flex flex-row justify-center md:justify-start items-center w-full">
           <span className="text-[#fff] font-[400] text-[16px]">A world of NFTs with community in mind</span>
         </div>

@@ -5,11 +5,11 @@ import Footer from '../components/Footer';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className="bg-[#03015A] flex justify-center items-center flex-col min-h-screen w-screen">
+    <div className="bg-[#03015A] flex justify-center items-center flex-col min-h-screen w-screen gap-4">
       <Header />
 
-      <div className="flex-1 overflow-auto w-full mt-[62.05px]">
-        <Component {...pageProps} />;
+      <div className="flex-1 overflow-auto max-w-full mt-[62.05px]">
+        <Component {...pageProps} />
       </div>
 
       <Footer />
