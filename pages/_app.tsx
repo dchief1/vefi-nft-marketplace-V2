@@ -1,20 +1,20 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
+import { useRouter } from 'next/router';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-function MyApp({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }: AppProps) {
+  const router = useRouter();
   return (
-    <div className="bg-[#03015A]">
+    <div className={`${router.pathname === '/' ? 'bg-gradiented' : 'bg-[#03015A]'} flex justify-center items-center flex-col min-h-screen w-screen gap-4`}>
       <Header />
 
-      <div className="min-h-screen">
-        <Component {...pageProps} />;
+      <div className="flex-1 overflow-auto max-w-full mt-[62.05px]">
+        <Component {...pageProps} />
       </div>
 
       <Footer />
     </div>
   );
 }
-
-export default MyApp;

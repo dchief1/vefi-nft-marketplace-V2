@@ -3,30 +3,15 @@ import { FaDiscord, FaYoutube } from 'react-icons/fa';
 
 export default function index() {
   return (
-    <div
-      className="
-      bg-[#01003E] w-full text-white 
-      py-4 md:py-8 lg:py-12 
-    "
-    >
-      <div
-        className="
-          flex md:flex-row flex-col lg:flex-row 
-          justify-between lg:mx-12 
-        "
-      >
+    <div className="bg-[#01003E] w-full text-white py-4 md:py-8 lg:py-12">
+      <div className="flex md:flex-row flex-col lg:flex-row justify-between lg:mx-12">
         {/* Firs Section */}
         <div className="px-8 md:px-8 ">
           <span className="text-lg ">
             Join our community <br /> of NFT enthusiast.
           </span>
 
-          <div
-            className="
-                  flex gap-4 text-[#5865F2] mb-4 items-center mt-6 
-                  cursor-pointer md:text-6xl text-4xl
-                "
-          >
+          <div className="flex gap-4 text-[#5865F2] mb-4 items-center mt-6 cursor-pointer md:text-6xl text-4xl">
             <Link href="/">
               <span>
                 {' '}
