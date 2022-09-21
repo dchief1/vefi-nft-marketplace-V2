@@ -25,7 +25,7 @@ const Home: NextPage = () => {
   return (
     <div className="flex flex-col justify-center items-center gap-8 w-full">
       <Hero />
-      <div className="flex flex-col justify-evenly gap-5 items-center w-full mt-[134px] px-7">
+      <div className="flex flex-col justify-evenly gap-5 items-center w-full mt-[134.79px] px-7">
         <div className="flex flex-row justify-between items-center w-full px-2">
           <span className="font-[800] text-[20px] text-[#fff]">Trending Projects</span>
           <Link href="/collections">
