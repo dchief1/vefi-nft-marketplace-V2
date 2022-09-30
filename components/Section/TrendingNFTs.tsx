@@ -3,7 +3,7 @@ import _ from 'lodash';
 
 const mockData = [
   {
-    collectionName: 'Planet Girls',
+    collectionName: 'Early morning chimpmonks',
     name: 'Planet Girl #1',
     image: '/placeholders/images/NFT2.png',
     blockChain: 'Ethereum',
@@ -11,7 +11,7 @@ const mockData = [
     highestBid: '200 wETH'
   },
   {
-    collectionName: 'Depraved Generals',
+    collectionName: 'Early morning chimpmonks',
     name: 'General Walstein',
     image: '/placeholders/images/NFT1.png',
     blockChain: 'Polygon',
@@ -19,7 +19,7 @@ const mockData = [
     highestBid: '120 wMATIC'
   },
   {
-    collectionName: 'Super Egos',
+    collectionName: 'Early morning chimpmonks',
     name: 'Super Ego #1',
     image: '/placeholders/images/NFT3.png',
     blockChain: 'Bitgert',
@@ -27,7 +27,7 @@ const mockData = [
     highestBid: '12000000 wBRISE'
   },
   {
-    collectionName: 'Planet Girls',
+    collectionName: 'Early morning chimpmonks',
     name: 'Planet Girl #1',
     image: '/placeholders/images/NFT2.png',
     blockChain: 'Ethereum',
@@ -35,7 +35,7 @@ const mockData = [
     highestBid: '200 wETH'
   },
   {
-    collectionName: 'Depraved Generals',
+    collectionName: 'Early morning chimpmonks',
     name: 'General Walstein',
     image: '/placeholders/images/NFT1.png',
     blockChain: 'Aurora',
@@ -43,7 +43,7 @@ const mockData = [
     highestBid: '1200 wAUR'
   },
   {
-    collectionName: 'Super Egos',
+    collectionName: 'Early morning chimpmonks',
     name: 'Super Ego #1',
     image: '/placeholders/images/NFT3.png',
     blockChain: 'Neon',
