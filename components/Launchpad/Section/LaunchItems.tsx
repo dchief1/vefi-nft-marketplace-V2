@@ -57,12 +57,20 @@ export default function FeaturedNFTs() {
               <figure className="w-full h-[200.56px]">
                 <img src={data.image} alt={data.collectionName} className="w-[inherit] h-[inherit]" />
               </figure>
-              <div className="card-body w-full">
+              <div className="card-body w-full bg-[#000]/[.41]">
                 <div className="flex justify-between px-4 items-center w-full">
-                  <span className="text-[#FFE600] font-[400] leading-[22px] text-[18px] font-monumentExtended card-title">
-                    {data.collectionName}
-                  </span>
+                  <span className="text-[#FFE600] font-[400] leading-[22px] text-[18px] font-monumentExtended card-title">{data.collectionName}</span>
                   <span className="text-white font-[400] text-[14px] font-outfit">{data.blockChain} </span>
+                </div>
+                <div className="card-actions justify-between w-full">
+                  <div className="flex justify-between flex-col gap-3 font-outfit">
+                    <span className="text-[#fff] text-[14px] font-[700]">Items</span>
+                    <span className="text-[#fff] text-[20px] font-[300]">{data.items}</span>
+                  </div>
+                  <div className="flex justify-between flex-col gap-3 font-outfit">
+                    <span className="text-[#fff] text-[14px] font-[700]">Price</span>
+                    <span className="text-[#fff] text-[20px] font-[300]">{data.price}</span>
+                  </div>
                 </div>
               </div>
             </div>
