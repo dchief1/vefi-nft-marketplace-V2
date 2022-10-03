@@ -17,7 +17,7 @@ export default class CustomDocument extends Document {
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin={undefined} />
           <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet" />
-          <link href="http://fonts.cdnfonts.com/css/monument-extended" rel="stylesheet" />
+          <link href="https://fonts.cdnfonts.com/css/monument-extended" rel="stylesheet" />
           <meta
             name="description"
             content="The Vefi NFT marketplace/launchpad is an independent product of the Vefi Ecosystem. The Vefi Ecosystem is aimed at the immersion of common sectors into the web3 space."
