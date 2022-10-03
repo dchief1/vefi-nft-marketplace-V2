@@ -65,9 +65,9 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center w-full gap-4">
-      <div className="flex flex-col justify-start items-center md:items-start gap-2">
-        <span className="text-[#fff] font-[800] text-[30px] md:text-[48px]">Buy &amp; Sell</span>
+    <div className="flex flex-col md:flex-row justify-center items-center w-full gap-4 px-5">
+      <div className="flex flex-col justify-center items-center md:items-start gap-2">
+        <span className="text-[#fff] font-[800] text-[30px] md:text-[48px] font-monumentExtended">Buy &amp; Sell</span>
         {_.map(heroTexts, (txt, index) => (
           <Transition
             key={index}
@@ -81,13 +81,13 @@ export default function Hero() {
             {txt}
           </Transition>
         ))}
-        <span className="text-[#fff] font-[800] text-[20px] md:text-[48px]">Artworks On Multiple Chains</span>
+        <span className="text-[#fff] font-[800] text-[30px] md:text-[48px] font-monumentExtended w-full">Artworks On Multiple Chains</span>
         <div className="flex flex-row justify-center md:justify-start items-center w-full">
-          <span className="text-[#fff] font-[400] text-[16px]">A world of NFTs with community in mind</span>
+          <span className="text-[#fff] font-[400] text-[16px] font-outfit">A world of NFTs with community in mind</span>
         </div>
         <div className="flex flex-row justify-center md:justify-start items-center w-full">
           <button className="bg-[#ffe600] rounded-[12px] px-8 py-1 flex justify-center items-center">
-            <span className="text-[#000] font-[500] text-[16px]">Become a creator</span>
+            <span className="text-[#000] font-[500] text-[16px] font-outfit">Become a creator</span>
           </button>
         </div>
       </div>
@@ -123,8 +123,8 @@ export default function Hero() {
                       </div>
                     </div>
                     <div className="flex flex-col justify-center items-start">
-                      <h6 className="card-title">{data.name}</h6>
-                      <p className="font-[400] text-[16px] text-[#000]">{data.artisteName}</p>
+                      <h6 className="card-title font-monumentExtended">{data.name}</h6>
+                      <p className="font-[400] text-[16px] text-[#000] font-outfit">{data.artisteName}</p>
                     </div>
                   </div>
                   <div className="avatar-group -space-x-6">
@@ -153,13 +153,13 @@ export default function Hero() {
               </div>
               <div className="card-actions justify-between w-full border-t-[#000] border-t-[2px]">
                 <div className="flex flex-col justify-center">
-                  <span className="font-[700] text-[#000]">Current Price</span>
+                  <span className="font-[700] text-[#000] font-outfit">Current Price</span>
                   <span className="border-[#000] border-[2px] text-[#000] font-[400] px-4 rounded-[11px]">
                     {data.currentPrice} {data.blockchain}
                   </span>
                 </div>
                 <div className="flex flex-col justify-center">
-                  <span className="font-[700] text-[#000]">Highest Bid</span>
+                  <span className="font-[700] text-[#000] font-outfit">Highest Bid</span>
                   <span className="border-[#000] border-[2px] text-[#000] font-[400] px-4 rounded-[11px]">
                     {data.highestBid} {data.blockchain}
                   </span>

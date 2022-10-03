@@ -2,10 +2,15 @@
 module.exports = {
   content: ['./components/**/*.{ts,tsx}', './pages/**/*.{ts,tsx}', './styles/**/*.css'],
   theme: {
-    backgroundImage: {
-      gradiented: 'linear-gradient(120deg, rgba(198, 250, 88, .52), #03015A 16.3777452416%)'
+    extend: {
+      backgroundImage: {
+        gradiented: 'linear-gradient(0deg, #020117, #020117), linear-gradient(0deg, #121212, #121212), #03015A;'
+      }
     },
-    extend: {}
+    fontFamily: {
+      outfit: ['Outfit'],
+      monumentExtended: ['Monument Extended']
+    }
   },
   plugins: [require('daisyui')],
   daisyui: {

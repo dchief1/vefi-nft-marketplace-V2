@@ -3,7 +3,7 @@ import { FaDiscord, FaYoutube } from 'react-icons/fa';
 
 export default function index() {
   return (
-    <div className="bg-[#01003E] w-full text-white py-4 md:py-8 lg:py-12">
+    <div className="w-full text-white py-4 md:py-8 lg:py-12" style={{ background: 'linear-gradient(0deg, #121212, #121212), #01003E' }}>
       <div className="flex md:flex-row flex-col lg:flex-row justify-between lg:mx-12">
         {/* Firs Section */}
         <div className="px-8 md:px-8 ">
