@@ -64,16 +64,16 @@ export default function Drops() {
   return (
     <div className="flex flex-nowrap flex-row justify-start items-center w-full overflow-scroll py-2 md:my-auto my-2 gap-2">
       {_.map(mockData, (data, index) => (
-        <div key={index} className="w-[296.78px]">
-          <div className="card card-bordered shadow-xl h-full w-[inherit] bg-transparent overflow-auto">
+        <div key={index} className="w-[350.78px] px-[3px] py-[4px] h-full">
+          <div className="card card-bordered shadow-xl w-[inherit] bg-transparent overflow-auto h-full">
             <figure className="w-[inherit] h-[200.56px]">
               <img src={data.image} alt={data.collectionName} className="w-[inherit] h-[inherit] rounded-[10px]" />
             </figure>
-            <div className="card-body w-full">
+            <div className="card-body w-full overflow-auto">
               <div className="flex justify-between items-center w-full">
-                <h2 className="card-title text-[#fff]">{data.collectionName}</h2>
+                <h2 className="card-title text-[#fff] font-monumentExtended">{data.collectionName}</h2>
                 <label
-                  className={`rounded-[5px] py-1 px-1 flex justify-center border-[1px] text-[12px] ${
+                  className={`rounded-[5px] py-1 px-1 flex justify-center border-[1px] text-[12px] font-outfit ${
                     data.startDate.getTime() < Date.now() && data.endDate.getTime() > Date.now()
                       ? 'border-[#00ff47] text-[#00ff47]'
                       : Date.now() < data.startDate.getTime()
@@ -90,7 +90,7 @@ export default function Drops() {
                   )}
                 </label>
               </div>
-              <span className="text-[#e21950] font-[400] text-[16px]">{data.artistName}</span>
+              <span className="text-[#e21950] font-[400] text-[16px] font-monumentExtended">{data.artistName}</span>
             </div>
           </div>
         </div>

@@ -173,30 +173,33 @@ const iconsMap = {
 export default function CollectionsList() {
   return (
     <div className="w-full overflow-auto">
-      <div className="table border-collapse w-full bg-transparent overflow-auto">
-        <div className="text-[#fff] table-header-group font-[800]">
-          <div className="table-row w-full">
-            <div className="text-left table-cell">#</div>
-            <div className="text-left table-cell">Collection</div>
-            <div className="text-center table-cell">Links</div>
-            <div className="text-center table-cell">Floor Price</div>
-            <div className="text-center table-cell">Volume</div>
-            <div className="text-center table-cell">Created On</div>
+      <div className="table border-separate w-full bg-transparent overflow-auto border-spacing-y-[15px] border-spacing-x-[0px]">
+        <div
+          className="text-[#fff] table-header-group font-[800] h-[50px] py-[10px] font-monumentExtended w-full"
+          style={{ background: 'linear-gradient(0deg, #121212, #121212), #04032D' }}
+        >
+          <div className="table-row w-full space-x-4 uppercase">
+            <div className="text-left table-cell py-5">#</div>
+            <div className="text-left table-cell py-5">Collection</div>
+            <div className="text-center table-cell py-5">Links</div>
+            <div className="text-center table-cell py-5">Floor Price</div>
+            <div className="text-center table-cell py-5">Volume</div>
+            <div className="text-center table-cell py-5">Created On</div>
           </div>
         </div>
-        <div className="table-row-group gap-1 w-full">
+        <div className="table-row-group gap-1 w-full font-monumentExtended text-[15px] border-t-[1em] border-transparent border-solid">
           {_.map(mockData, (item, index) => (
-            <div key={index} className={`table-row py-4 text-[#fff] ${index < mockData.length - 1 ? 'border-b-[0.5px] border-[#ffe600]' : ''}`}>
-              <div className="text-left table-cell font-[600]">{index + 1}</div>
-              <div className="table-cell text-center">
+            <div key={index} className="table-row text-[#fff] shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
+              <div className="text-left table-cell font-[600] px-2">{index + 1}</div>
+              <div className="table-cell text-center px-2">
                 <div className="flex justify-start items-center gap-2 py-1 w-full">
-                  <img src={item.image} alt={item.collectionName} className="rounded-[10px] w-[45px] h-[45px]" />
+                  <img src={item.image} alt={item.collectionName} className="rounded-[3px] w-[45px] h-[45px]" />
                   <div className="flex justify-start px-2">
-                    <span className="font-[600] text-[14px]">{item.collectionName}</span>
+                    <span className="font-[600] text-[15px]">{item.collectionName}</span>
                   </div>
                 </div>
               </div>
-              <div className="table-cell text-center">
+              <div className="table-cell text-center px-2">
                 <div className="flex justify-center items-center gap-1">
                   {item.website && (
                     <a href={item.website} target="_blank" rel="noreferrer">
@@ -210,9 +213,9 @@ export default function CollectionsList() {
                   ))}
                 </div>
               </div>
-              <div className="text-center table-cell">{item.floorPrice}</div>
-              <div className="text-center table-cell">{item.volume}</div>
-              <div className="text-center table-cell">{item.createdOn.toDateString()}</div>
+              <div className="text-center table-cell px-2">{item.floorPrice}</div>
+              <div className="text-center table-cell px-2">{item.volume}</div>
+              <div className="text-center table-cell px-2">{item.createdOn.toDateString()}</div>
             </div>
           ))}
         </div>

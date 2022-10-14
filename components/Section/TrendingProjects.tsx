@@ -56,7 +56,7 @@ export default function TrendingProjects() {
     <div className="flex flex-nowrap flex-row justify-start items-center w-full overflow-scroll py-2 md:my-auto my-2 gap-2">
       {_.map(mockData, (data, index) => (
         <div key={index} className="h-[300px] md:h-[434.25px] md:w-[395.57px]">
-          <div className="card shadow-xl image-full h-[inherit] w-[inherit] hover:scale-105 transition-transform ease-in-out delay-150">
+          <div className="card shadow-xl image-full h-[inherit] w-[inherit] hover:scale-105 transition-transform ease-in-out delay-150 font-monumentExtended cursor-pointer">
             <figure>
               <img src={data.image} alt={data.name} />
             </figure>

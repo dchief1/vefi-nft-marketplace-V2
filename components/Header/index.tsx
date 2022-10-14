@@ -10,11 +10,11 @@ export default function Header() {
     <div className="w-full">
       <div className="flex justify-between items-center p-6 w-full">
         <Link href="/">
-          <Image className="rounded-[25px]" width={30} height={30} src="/logo.png" alt="logo" />
+          <Image className="rounded-[25px] cursor-pointer" width={95} height={95} src="/logo.svg" alt="logo" />
         </Link>
         <div className="flex justify-between items-center gap-4">
           <button className="bg-[#ffe600] py-1 px-2 rounded-[10px]">
-            <span className="text-[#000] font-[700] text-[14px]">Connect Wallet</span>
+            <span className="text-[#000] font-[700] text-[14px] font-outfit">Connect Wallet</span>
           </button>
           <div className="dropdown dropdown-end">
             <label tabIndex={0} className="p-0">
