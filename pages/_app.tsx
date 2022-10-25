@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
     >
       <Header />
 
-      <div className="flex-1 overflow-auto max-w-full mt-[62.05px]">
+      <div className="flex-1  max-w-full mt-[62.05px]">
         <Component {...pageProps} />
       </div>
 
