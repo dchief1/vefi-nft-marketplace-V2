@@ -155,14 +155,12 @@ export default function Explore() {
               <Image
                 src={`https://plus.unsplash.com/premium_photo-1663931932648-cf5545116c35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80`}
                 alt=""
-                height="100"
-                width="100"
+                height="300"
+                width="400"
               />
               ;
             </div>
-            <div className="nft__info">
-                
-            </div>
+            <div className="nft__info"></div>
           </div>
         </div>
       </div>
