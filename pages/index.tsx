@@ -27,8 +27,8 @@ const Home: NextPage = () => {
       <div className="flex flex-col justify-evenly gap-5 items-center w-full mt-[134.79px] px-7">
         <div className="flex flex-row justify-between items-center w-full px-2">
           <span className="font-[800] text-[20px] text-[#fff]">Trending Projects</span>
-          <Link href="/collections">
-            <span className="border-[1px] box-border rounded-[4px] border-[#fff] py-1 px-4 flex justify-center items-center text-[#fff] font-[400] text-[16px]">
+          <Link href="/explore?tab=collections">
+            <span className="border-[1px] cursor-pointer box-border rounded-[4px] border-[#fff] py-1 px-4 flex justify-center items-center text-[#fff] font-[400] text-[16px]">
               See All
             </span>
           </Link>
@@ -69,8 +69,8 @@ const Home: NextPage = () => {
               Coming Soon
             </button>
           </div>
-          <Link href="/collections">
-            <span className="border-[1px] box-border rounded-[4px] border-[#fff] py-1 px-4 flex justify-center items-center text-[#fff] font-[400] text-[16px] font-monumentExtended">
+          <Link href="/explore?tab=collections">
+            <span className="border-[1px] cursor-pointer box-border rounded-[4px] border-[#fff] py-1 px-4 flex justify-center items-center text-[#fff] font-[400] text-[16px] font-monumentExtended">
               See All
             </span>
           </Link>

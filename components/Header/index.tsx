@@ -27,7 +27,7 @@ export default function Header() {
             <ul tabIndex={0} className="dropdown-content menu p-2 max-w-[286px] bg-[#121212] font-[500] text-white">
               <li className="w-full">
                 <Link href="/launchpad">
-                  <div className="flex justify-between items-start w-full">
+                  <div className="flex justify-start gap-2 items-start w-full">
                     <FaRocket />
                     <span className="text-[16px]">Launchpad</span>
                   </div>
@@ -35,7 +35,7 @@ export default function Header() {
               </li>
               <li className="w-full">
                 <Link href="/marketplace">
-                  <div className="flex justify-between items-start w-full">
+                  <div className="flex justify-start gap-2 items-start w-full">
                     <FiShoppingCart />
                     <span className="text-[16px]">Marketplace</span>
                   </div>
@@ -43,15 +43,15 @@ export default function Header() {
               </li>
               <li className="w-full">
                 <Link href="/creators">
-                  <div className="flex justify-between items-start w-full">
+                  <div className="flex justify-start gap-2 items-start w-full">
                     <FaPaintBrush />
                     <span className="text-[16px]">Creators</span>
                   </div>
                 </Link>
               </li>
               <li className="w-full">
-                <Link href="/nfts">
-                  <div className="flex justify-between items-start w-full">
+                <Link href="/explore?tab=nfts">
+                  <div className="flex justify-start gap-2 items-start w-full">
                     <AiOutlinePicture />
                     <span className="text-[16px]">Artworks</span>
                   </div>
@@ -59,7 +59,7 @@ export default function Header() {
               </li>
               <li className="w-full">
                 <Link href="/insights">
-                  <div className="flex justify-between items-start w-full">
+                  <div className="flex justify-start gap-2 items-start w-full">
                     <MdOutlineInsights />
                     <span className="text-[16px]">Insights</span>
                   </div>
